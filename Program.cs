@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -33,6 +33,9 @@ namespace ShapesHW
 
             Polygon hex1 = new Polygon(3, 5, 6, 3, 5, 6 );
             Console.WriteLine("The polygon's perimeter is {0} and it has {1} sides.", hex1.CalculatePerimeter(), hex1.SizeLengths.Count);
+
+            Polygon sept1 = new Polygon(3.5, 13, 7.75, 5, 15, 6.25, 5);
+            Console.WriteLine("The polygon's perimeter is {0} and it has {1} sides.", sept1.CalculatePerimeter(), sept1.SizeLengths.Count);
 
             Console.ReadLine();
 
