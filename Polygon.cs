@@ -14,7 +14,7 @@ namespace ShapesHW
     {
         private int _numberOfSides;
         public List<double> SizeLengths = new List<double>();
-        
+
         //constructors
         public Polygon(params double[] sides)
         {
@@ -33,23 +33,12 @@ namespace ShapesHW
         {
             return SizeLengths.Sum();
         }
-
-        public static double CalculatePerimeter(params double[] sides)
+              
+        public static double CalculatePerimeter(double side, params double[] sides)
         {
-            /* More verbose method...
-            double sum = 0;
-            int i = 0;
-            while (i < sides.Count)
-            {
-                sum += sides[i];
-                i++;
-            };
-            return sum;
-            */
             return sides.Sum();
         }
-
-
+        
         public override double CalculateArea()
         {
             throw new NotImplementedException();
