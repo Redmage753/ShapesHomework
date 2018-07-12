@@ -35,7 +35,7 @@ namespace ShapesHW
         }
 
         // Tried to add the static keyword per instructions, but it won't compile due to "An object reference is required for the nonstatic field, method, or property"
-        public static double CalculatePerimeter(params double[] sides)
+        public double CalculatePerimeter(params double[] sides)
         {
             /* More verbose method...
             double sum = 0;
